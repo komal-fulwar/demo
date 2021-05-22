@@ -1,6 +1,6 @@
 (function ($) {
-	"use strict";
-    jQuery(document).ready(function($){
+    "use strict";
+    jQuery(document).ready(function ($) {
         /*------------------------------
             counter section activation
         -------------------------------*/
@@ -42,9 +42,9 @@
         /*------------------------------
             smoth achor effect
         ------------------------------*/
-        $(document).on('click','#appside_main_menu li a', function (e) {
+        $(document).on('click', '#appside_main_menu li a', function (e) {
             var anchor = $(this).attr('href');
-            var link = anchor.slice(0,1);
+            var link = anchor.slice(0, 1);
             if ('#' == link) {
                 e.preventDefault();
                 var top = $(anchor).offset().top;
@@ -53,13 +53,13 @@
                 }, 1000);
                 $(this).parent().addClass('active').siblings().removeClass('active');
             }
-           
+
         });
-        
-        
-       /*----------------------------------------
-            screenshort carousel
-        ----------------------------------------*/
+
+
+        /*----------------------------------------
+             screenshort carousel
+         ----------------------------------------*/
         var $brandCarousel = $('.brand-carousel');
         if ($brandCarousel.length > 0) {
             $brandCarousel.owlCarousel({
@@ -69,8 +69,8 @@
                 margin: 30,
                 dots: false,
                 nav: true,
-                smartSpeed:3000,
-                navText:['',''],
+                smartSpeed: 3000,
+                navText: ['', ''],
                 responsive: {
                     0: {
                         items: 1,
@@ -90,7 +90,7 @@
                     },
                     960: {
                         items: 3,
-                        nav:false
+                        nav: false
                     },
                     1200: {
                         items: 4
@@ -110,11 +110,11 @@
                 loop: true,
                 autoplay: true, //true if you want enable autoplay
                 autoPlayTimeout: 1000,
-                margin: 30,
+                margin: 1,
                 dots: false,
                 nav: true,
-                smartSpeed:3000,
-                navText:['',''],
+                smartSpeed: 3000,
+                navText: ['', ''],
                 responsive: {
                     0: {
                         items: 1,
@@ -134,7 +134,7 @@
                     },
                     960: {
                         items: 3,
-                        nav:false
+                        nav: false
                     },
                     1200: {
                         items: 4
@@ -157,8 +157,8 @@
                 margin: 30,
                 dots: false,
                 nav: true,
-                smartSpeed:3000,
-                navText:['',''],
+                smartSpeed: 3000,
+                navText: ['', ''],
                 responsive: {
                     0: {
                         items: 1,
@@ -174,7 +174,7 @@
                     },
                     960: {
                         items: 3,
-                        nav:false
+                        nav: false
                     },
                     1200: {
                         items: 4
@@ -197,10 +197,10 @@
                 margin: 30,
                 dots: true,
                 nav: true,
-                smartSpeed:3000,
-                animateIn:'fadeIn',
-                animateOut:"fadeOut",
-                navText:['',''],
+                smartSpeed: 3000,
+                animateIn: 'fadeIn',
+                animateOut: "fadeOut",
+                navText: ['', ''],
                 responsive: {
                     0: {
                         items: 1,
@@ -216,7 +216,7 @@
                     },
                     960: {
                         items: 1,
-                        nav:false
+                        nav: false
                     },
                     1200: {
                         items: 1
@@ -239,30 +239,30 @@
                 margin: 60,
                 dots: true,
                 nav: true,
-                smartSpeed:3000,
-                animateIn:'fadeIn',
-                animateOut:"fadeOut",
-                navText:['',''],
+                smartSpeed: 3000,
+                animateIn: 'fadeIn',
+                animateOut: "fadeOut",
+                navText: ['', ''],
                 center: true,
-                stagePadding:100,
+                stagePadding: 100,
                 responsive: {
                     0: {
                         items: 1,
                         nav: false,
-                        center:false,
-                        stagePadding:10
+                        center: false,
+                        stagePadding: 10
                     },
                     414: {
                         items: 1,
                         nav: false,
-                        center:false,
-                        stagePadding:10
+                        center: false,
+                        stagePadding: 10
                     },
                     767: {
                         items: 1,
                         nav: false,
-                        center:false,
-                        stagePadding:10
+                        center: false,
+                        stagePadding: 10
                     },
                     768: {
                         items: 1,
@@ -270,14 +270,14 @@
                     },
                     960: {
                         items: 1,
-                        nav:false,
-                        center:false
+                        nav: false,
+                        center: false
                     },
                     1200: {
                         items: 2,
-                        nav:false,
-                        center:false,
-                        stagePadding:10
+                        nav: false,
+                        center: false,
+                        stagePadding: 10
                     },
                     1920: {
                         items: 2
@@ -297,10 +297,10 @@
                 margin: 30,
                 dots: true,
                 nav: true,
-                smartSpeed:3000,
-                animateIn:'fadeIn',
-                animateOut:"fadeOut",
-                navText:['',''],
+                smartSpeed: 3000,
+                animateIn: 'fadeIn',
+                animateOut: "fadeOut",
+                navText: ['', ''],
                 responsive: {
                     0: {
                         items: 1,
@@ -316,7 +316,7 @@
                     },
                     960: {
                         items: 2,
-                        nav:false,
+                        nav: false,
                     },
                     1200: {
                         items: 3
@@ -339,10 +339,10 @@
                 margin: 30,
                 dots: true,
                 nav: true,
-                smartSpeed:3000,
-                animateIn:'fadeIn',
-                animateOut:"fadeOut",
-                navText:['',''],
+                smartSpeed: 3000,
+                animateIn: 'fadeIn',
+                animateOut: "fadeOut",
+                navText: ['', ''],
                 responsive: {
                     0: {
                         items: 1,
@@ -366,7 +366,7 @@
                     },
                     960: {
                         items: 3,
-                        nav:false
+                        nav: false
                     },
                     1200: {
                         items: 4
@@ -377,33 +377,33 @@
                 }
             });
         }
-        
-     
+
+
     });
 
-    
+
     //define variable for store last scrolltop
     var lastScrollTop = '';
     $(window).on('scroll', function () {
         /*---------------------------
             back to top show / hide
         ---------------------------*/
-       var ScrollTop = $('.back-to-top');
-       if ($(window).scrollTop() > 1000) {
-           ScrollTop.fadeIn(1000);
-       } else {
-           ScrollTop.fadeOut(1000);
-       }
-       /*--------------------------
-        sticky menu activation
-       ---------------------------*/
+        var ScrollTop = $('.back-to-top');
+        if ($(window).scrollTop() > 1000) {
+            ScrollTop.fadeIn(1000);
+        } else {
+            ScrollTop.fadeOut(1000);
+        }
+        /*--------------------------
+         sticky menu activation
+        ---------------------------*/
         var st = $(this).scrollTop();
         var mainMenuTop = $('.navbar-area');
         if ($(window).scrollTop() > 1000) {
             if (st > lastScrollTop) {
                 // hide sticky menu on scrolldown 
                 mainMenuTop.removeClass('nav-fixed');
-                
+
             } else {
                 // active sticky menu on scrollup 
                 mainMenuTop.addClass('nav-fixed');
@@ -413,10 +413,10 @@
             mainMenuTop.removeClass('nav-fixed ');
         }
         lastScrollTop = st;
-       
+
     });
-           
-    $(window).on('load',function(){
+
+    $(window).on('load', function () {
         /*-----------------------------
             preloader
         -----------------------------*/
@@ -429,4 +429,20 @@
         backtoTop.fadeOut(100);
     });
 
-}(jQuery));	
+}(jQuery));
+
+
+
+function mouseOne() {
+    document.getElementById("demo").src =  "assets/img/1.png"
+}
+
+function mouseTwo() {
+    document.getElementById("demo").src = "assets/img/2.png"
+}
+function mouseThree() {
+    document.getElementById("demo").src = "assets/img/3.png"
+}
+function mouseFour() {
+    document.getElementById("demo").src = "assets/img/4.png"
+}
